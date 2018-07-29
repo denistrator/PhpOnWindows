@@ -147,7 +147,7 @@ unset($argument);
 dbg('Linux arguments: ' . implode(' ', $arguments));
 
 // -dxdebug.remote_log=/mnt/c/Code/UbuntuPhpWindows/xdebugLog.txt
-$linuxCmd = ($envValues ? $envValues . ' ' : '') . 'php ' . implode(' ', $arguments);
+$linuxCmd = ($envValues ? $envValues . ' ' : '') . 'echo 1111 | sudo -S php ' . implode(' ', $arguments);
 dbg('Linux command: ' . $linuxCmd);
 
 $cmd = $bashPath . ' -c "' . $linuxCmd . '"';
